@@ -13,6 +13,7 @@ body {
     flex-direction: column;
 }
 
+/* Barra de navegação  e itens da mesma */
 header {
     background-color: #1b1b1b;
     padding: 20px 0;
@@ -27,13 +28,15 @@ nav ul {
     margin: auto;
     padding: 0;
     display: flex; 
-    justify-content: center; 
+    justify-content: left; 
     flex-wrap: wrap; 
+    margin-left: 150px;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    margin-left: 30px;
 }
 
 nav ul li a {
@@ -43,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #32CD32;
+    color: #3C8700;
 }
 
 nav ul li img {
@@ -52,11 +55,12 @@ nav ul li img {
     height: 20px;
     vertical-align: middle; 
     margin: 0 5px; 
-    margin-left: 55px;
+    margin-left: 250px;
     border: 2px solid transparent; 
     transition: border-color 0.3s ease; 
 }
 
+/* Parte da introdução, foto, texto e btn */
 .intro {
     margin-left: auto;
     margin-right: auto;
@@ -84,38 +88,27 @@ nav ul li img {
 }
 
 .info p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
+    color: #797676;
 }
 
 .button {
     display: block; 
     width: 200px;
-    background-color: #32CD32;
+    background-color: #3C8700;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-top: 25px;
 }
 
 .button:hover {
-    background-color: #28a745;
-}
-
-.vertodos-button {
-    display: block; 
-    width: 200px;
-    background-color: #32CD32;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
+    background-color: #459801;
 }
 
 .profile-pic {
@@ -123,19 +116,19 @@ nav ul li img {
     padding: 20px;
     text-align: center;
     margin-right: 100px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .profile-pic img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     
 }
 
+/* Seção de projetos */
 .separator {
-    text-align: center;
     background-color: #fff;
     color: #000000;
     padding: 20px;
@@ -149,17 +142,19 @@ nav ul li img {
 
 .separator h2 {
     font-size: 2.2rem;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .separator p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 40px;
     text-align: center;
+    color: #797676;
 }
 
+/* Estilo para os projetos */
 .project-container {
     display: flex;
     justify-content: space-between;
@@ -167,23 +162,25 @@ nav ul li img {
     flex-direction: row;
     box-sizing: border-box;
     overflow: hidden;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .project-card {
     background-color: #fff;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
 }
 
 .project-card h3 {
     color: #000;
     font-size: 1.5rem;
-    margin: 10px 10px;
+    margin: 15px 0 15px 0;
     text-align: left;
 }
 .project-card p {
-    color: #000;
+    color: #797676;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -212,30 +209,14 @@ nav ul li img {
     border-radius: 10px;
     width: 100%;
     margin-right: auto;
-    margin-left: 150px;
+    margin-left: 125px;
 }
 
-.project-card2 h3 {
-    color: #000;
-    font-size: 1.5rem;
-    margin: 10px 10px;
-    text-align: left;
-}
-.project-card2 p {
-    color: #000;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: left;
-    width: 70%;
+.project-img.img-gatoescola{
+    margin-left: 135px;
 }
 
-.project-img2 {
-    width: 60%;
-    height: auto;
-    margin-left: 100px;
-}
-
+/* Tags dos projetos */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -243,36 +224,31 @@ nav ul li img {
 }
 
 .project-tag {
+    border-radius: 15px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.orange-tag {
     background-color: #FFE4BC;
-    border-radius: 15px;
-    color: #FF9900;
-    font-size: 14px;
-    margin: 5px;
-    padding: 5px 10px;
+    color: #ff9900;
 }
 
-.project-tag2 {
+.blue-tag {
     background-color: #DDDEFF;
-    border-radius: 15px;
     color: #3A41F8;
-    font-size: 14px;
-    margin: 5px;
-    padding: 5px 10px;
 }
 
-.project-tag3 {
-    background-color: #E0FFF8;
-    border-radius: 15px;
-    color: #2AB090;
-    font-size: 14px;
-    margin: 5px;
-    padding: 5px 10px;
+.green-tag {
+    background-color: #3d87006d;
+    color: #3C8700;
 }
-
+ 
+/* Project buttons */
 .project-button {
     display: flex;
     width: 155px;
-    background-color: #FF9900;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -283,47 +259,54 @@ nav ul li img {
     transition: background-color 0.3s ease;
 }
 
-.project-button:hover {
-    background-color: #faa82d;
+.orange-button {
+    background-color: #ff9900;
 }
 
-.project-button2 {
-    display: flex;
-    width: 155px;
+.orange-button:hover {
+    background-color: #f5a42c;
+}
+
+.blue-button {
     background-color: #3A41F8;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
+}
+
+.blue-button:hover {
+    background-color: #5A61FF;
+}
+
+.green-button {
+    background-color: #3C8700;
+}
+
+.green-button:hover {
+    background-color: #459801;
+}
+
+/* Botão para ver todos os projetos */
+.vertodos-button {
+    display: block; 
+    width: 200px;
+    background-color: #fff;
+    color: #3C8700;
     padding: 10px 20px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.project-button2:hover {
-    background-color: #4f55fc;
-}
-
-.project-button3 {
-    display: flex;
-    width: 155px;
-    background-color: #2AB090;
-    border: none;
+    text-align: center;
+    font-size: 15px;
     border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-decoration: none;
+    border: 3px solid #3C8700; ;
     transition: background-color 0.3s ease;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
-.project-button3:hover {
-    background-color: #67b6a3;
+.vertodos-button:hover {
+    background-color: #3C8700;
+    color: #fff;
 }
 
+/* Rodapé */
 .footer {
     background-color: #080808;
     color: #9C9C9C;
@@ -335,6 +318,7 @@ nav ul li img {
     border-top: 1px solid #2d2d2d;
 }
 
+/* Estilo para a seção Sobre Mim */
 .sobremim-intro {
     margin-left: auto;
     margin-right: auto;
@@ -353,7 +337,7 @@ nav ul li img {
     padding: 20px;
     text-align: center;
     margin-right: 100px;
-    margin-top: 300px;
+    margin-top: 290px;
 }
 
 .sobremim-pic img {
@@ -369,7 +353,7 @@ nav ul li img {
     text-align: center;
     padding: 20px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -383,28 +367,12 @@ nav ul li img {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: left;
+    color: #797676;
 }
 
-.banner {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;  
-    text-align: left; 
-    padding: 0px;
-    background-color: #080808;
-    
-}
 
-.banner img {
-    width: 100%;
-}
-
-/* Seção Contato */
+/* Estilo para a seção Contato */
 .container {
    
     color: #fff;
@@ -456,7 +424,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .submit {
-    background-color: #32CD32;
+    background-color: #3C8700;
     color: white;
     padding: 5px 20px;
     border: none;
@@ -468,91 +436,444 @@ input::placeholder, textarea::placeholder {
 }
 
 .submit:hover {
-    background-color: #28a745;
+    background-color: #459801;
+}
+
+/* Formação academica */
+.formacao-card {
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+}
+
+.formacao-card h3 {
+    color: #000;
+    font-size: 1.5rem;
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+.formacao-card p {
+    color: #797676;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.formacao-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.formacao-item img.icon {
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.formacao-item img.icon.icon-unp {
+    width: auto;
+    height:50px;
+    margin: 0px 32px 0px 20px;
+}
+
+.formacao-item img.icon.icon-python, .formacao-item img.icon.icon-cisco{
+    width: auto;
+    height: 70px;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formacao-item.item-python {
+    margin-bottom: 40px;
+}
+
+.formacao-item img.icon.icon-networking {
+    width: auto;
+    height: 150px;
+    margin-right: -10px;
+    margin-left: -20px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+#caption {
+    visibility: hidden;
 }
 
 
-/* Para telas menores que 768px (tablets e celulares em modo paisagem) */
-@media (max-width: 768px) {
-    header, .separator, .project-card, .project-card2 {
-        width: 90%; /* Aumenta a largura para ocupar mais espaço na tela menor */
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* Estilo do Modal (inicialmente oculto) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
 
-    .boxing {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+/* Conteúdo da Imagem dentro do Modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
 
-    .info, .profile-pic {
+/* Botão de fechar (x) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para telas médias (Tablets e laptops pequenos) */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
         margin-left: 0;
+    }
+
+    .intro {
+        max-width: 80%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .profile-pic {
         margin-right: 0;
-        text-align: center; /* Centraliza o conteúdo */
+        margin-top: 20px;
+        text-align: center;
     }
 
-    .profile-pic img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .info h1 {
-        font-size: 2rem; /* Diminui o tamanho da fonte */
-    }
-
-    .info p, .project-card p, .project-card2 p {
-        font-size: 1rem; /* Ajusta o tamanho da fonte */
-        width: 100%; /* Ajusta o texto para ocupar todo o espaço disponível */
-    }
-
-    .project-container, .project-container2 {
-        flex-direction: column; /* Coloca os itens um abaixo do outro */
+    .project-container {
+        flex-direction: column;
         align-items: center;
     }
 
-    .project-card, .project-card2 {
-        margin: 20px 0; /* Adiciona margem entre os itens */
-        width: 90%;
+    .project-card, .project-card.project-card2 {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .project-card.project-card2 {
+        margin-bottom: 0px;
+        margin-top: 70px;
     }
 
-    .project-img, .project-img2 {
-        margin-left: 0;
-        margin-right: 0;
+    .project-card p, .project-card h3 {
+        word-wrap: break-word;
+
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .project-img.img-gatoescola{
+        margin-top: -10px;
+    }
+
+    .project-container2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .project-tags, .project-card2 h3, .project-card2 p {
+        display: block;
+        text-align: left;
+    }
+
+    .formacao-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacao-item img.icon {
+        width: 30px;
+        height: auto;
+    }
+}
+
+/* Estilo para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .button{
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .info h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .profile-pic img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .separator h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    
+
+    .project-card h3 {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: left;
+    };
+
+    .project-img.img-gatoescola {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+    
+    .project-button, .orange-button, .blue-button, .green-button {
         width: 100%;
     }
+
+    label {
+        margin-left: 20px;
+    }
+    
+    input, textarea {
+        max-width: 90%;
+        margin: 0 5%; 
+    }
+
+    .formacao-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px 0 10px;
+    }
+
+    .formacao-item img.icon {
+        width: 30px;
+        height: auto;
+    }
 }
 
-/* Para telas menores que 480px (celulares) */
-@media (max-width: 480px) {
-    .project-button, .project-button2, .project-button3 {
-        width: 100%; /* Deixa os botões ocuparem toda a largura */
+@media (min-width: 768px) and (max-width: 1024px){
+    .profile-pic img {
+        object-fit: scale-down;
+        justify-content: center;
     }
 
-    .project-tags, nav ul {
-        justify-content: center; /* Centraliza as tags e o menu */
+    .button {
+        justify-content: center;
     }
 
-    nav ul li {
-        margin: 10px 5px; /* Diminui o espaçamento entre os itens do menu */
+    .info{
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+    
+    input, textarea {
+        max-width: 90%; 
+        margin: 0 5%; 
+    }
+
+    .formacao-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+
+    .formacao-item img.icon {
+        width: 30px;
+        height: auto;
     }
 }
 
+/* Ajustes para telas médias e grandes */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .project-container2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .img-odonto {
+        width: 100%;
+        height: auto;
+        max-width: 50%;
+        object-fit: contain;
+        margin-right: 10px;
+       
+    }
 
- @media (min-width: 1800px) {
-    .project-card, .project-card3 {
-        width: 30%;
-        margin-left: 600px;
+    .info{
+        margin: 0 auto;
+        text-align: left;
     }
-    .project-img, .project-img3 {
-       margin-right: 600px;
+
+    .project-card, .project-card2 {
+        margin-left: 20px;
+        flex: 1;
     }
+
     .project-card2 {
-       width: 50%;
-       margin-right: 450px;
-       margin-left: 50px;
+        width: 45%;
+        margin-top: 20px;
+        max-width: auto; 
+        padding: 20px;
+        box-sizing: border-box;
     }
-    .project-img2 {
-        margin-left: 450px;
+
+    .img-gatoescola {
+        width: 50%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+       
+    }
+
+    .project-tags, .project-card2 h3, .project-card2 p {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+    
+    input, textarea {
+        max-width: 90%; 
+        margin: 0 5%; 
     }
 }
+
+/* Estilo para telas grandes (desktop) */
+@media (min-width: 1200px) {
+    .intro {
+        max-width: 80%;
+    }
+
+    .project-container {
+        justify-content: space-around;
+    }
+
+    .project-card, .project-card2 {
+        width: 35%;
+        text-align: left;
+    }
+
+    .profile-pic img {
+        width: 400px;
+        height: 400px;
+    }
+
+    label {
+        margin-left: 30px;
+    }
+    
+    input, textarea {
+        max-width: 90%; 
+        margin: 0 5%; 
+    }
+}
+
+/* Estilo para telas 4K (telas muito grandes) */
+@media (min-width: 2560px) {
+    body {
+        font-size: 18px;
+    }
+
+    .intro {
+        max-width: 60%;
+    }
+
+    .project-card, .project-card2 {
+        text-align: left;
+    }
+
+    .project-card h3 {
+        font-size: 2rem;
+    }
+
+    .project-card p {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .separator h2 {
+        font-size: 3rem;
+    }
+}
+
 

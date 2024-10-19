@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Nicolas Saglio Rossini</title>
+    
 </head>
 <body>
-    <section id="intro" class="intro">
+    <section id="intro" class="sobremim-intro">
         <header>
             <nav>
                 <ul>
-                    <li><a href="home.html">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="sobremim.html">Sobre mim</a></li>
                     <li><a href="formacao.html">Formação</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -19,21 +20,60 @@
                 </ul>
             </nav>
         </header>
-        <div class="profile-pic">
-            <img src="imagens/profile.jpg" alt="Nicolas Saglio Rossini">
-        </div>
-        <div class="info">
-            <h1>Nicolas Saglio Rossini</h1>
-            <p>Nascido na Argentina, atualmente morando no Brasil.<br>
-                Estudante de Engenharia de Software na Uninter.<br>
-                Amante da tecnologia, codando desde 2023.</p>
-            <a href="sobremim.html" class="button">Ver mais &gt;</a>
-        </div>
     </section> 
+        <div class="separator">
+            <div class="formacao-card">
+                <h3>Formação Academica</h3>
+
+                <div class="formacao-item">
+                    <p><img src="imagens/uninter.png" alt="ícone uninter" class="icon">- Centro Universitário Internacional UNINTER
+                        Bacharelado, Engenharia de Software · (2023 - )</p>
+                </div>
+
+                <div class="formacao-item">
+                    <p><img src="imagens/unp.png" alt="ícone unp" class="icon icon-unp">- Universidade Potiguar
+                        Bacharelado, Ciência da Computação · (2023 - 2024)</p>
+                </div>
+                <div class="formacao-item"> 
+                    <p><img src="imagens/mamede.png" alt="ícone escola" class="icon">- Estadual Professor José Mamede
+                        Ensino Médio · (2012 - 2015)</p> 
+                </div>
+                <h3>Cursos</h3>
+
+                <div class="formacao-item item-python">
+                    <p>
+                        <img src="imagens/python.png" alt="ícone python3" class="icon icon-python" data-large="imagens/python-certificate.jpg">
+                        - The legend of Python (Codédex)
+                    </p>
+                </div>
+
+                <div class="formacao-item">
+                    <p>
+                        <img src="imagens/cybersecurity.png" alt="ícone cisco" class="icon icon-cisco " data-large="imagens/cybersecurity-certificate.png">
+                        - Cybersecurity essentials (Cisco Academy)
+                    </p>
+                </div>
+
+                <div class="formacao-item">
+                    <p>
+                        <img src="imagens/networking.png" alt="ícone networking" class="icon icon-networking" data-large="imagens/networking-certificate.png">
+                        - Networking Essentials (Cisco Academy)
+                    </p>
+                </div>
+
+                <div id="imageModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+        </div>
     
     <footer class="footer">
         <p>Desenvolvido por Nicolas Saglio Rossini</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
